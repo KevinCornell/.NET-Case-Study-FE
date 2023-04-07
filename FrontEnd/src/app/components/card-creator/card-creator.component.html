@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Create Flashcard</h2>
+
+<mat-dialog-content [formGroup]="form">
+  <mat-form-field>
+    <div class="input-spacing">
+      <p>
+        Question:
+      </p>
+      <textarea matInput formControlName="question" placeholder="Question"></textarea>
+    </div>
+    <div class="input-spacing">
+      <p>
+        Answer:
+      </p>
+      <textarea matInput formControlName="answer" placeholder="Answer"></textarea>
+    </div>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <div class="actions-spacing">
+    <button class="mat-raised-button" (click)="Close()">Close</button>
+  </div>
+  <div class="actions-spacing">
+    <button class="mat-raised-button" (click)="Save()">Save</button>
+  </div>
+</mat-dialog-actions>
