@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class FlashcardService {
 
-  url: string = 'https://localhost:7257/';
+  url: string = 'https://flashcardapp-kevincornell.azurewebsites.net/';
 
   constructor(private http: HttpClient) { }
 
